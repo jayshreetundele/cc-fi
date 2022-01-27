@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&family=Noto+Serif+Display:wght@100;200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App .left {
+  width: 50%;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App .left img {
+  width: 100%;
+  width: 25rem;
+  height: 25.1rem;
+}
+
+.App .right {
+  width: 50%;
+  margin-left: 30px;
+}
+
+.App .right .text .heading {
+  font-size: 54px;
+  font-weight: 600;
+}
+
+.App .right .text .subHeading {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.App .right .buttons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.App .right .buttons .btnGoogle {
+  padding: 0.625rem;
+  width: 300px;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #674ea7;
+  color: #f6f6f6;
+  font-size: 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all ease-in-out 3ms;
+}
+
+.App .right .buttons .btnGoogle:hover {
+  opacity: 0.9;
+}
+
+.App .right .buttons .googleIcon img {
+  width: 1.4rem;
+}
+
+.App .right .buttons .btnGoogle .googleText {
+  font-size: 16px;
+  padding: 0.6rem;
+}
+
+.App .right .buttons .linePartition {
+  width: 48%;
+  /* margin: 30px 0px 30px 0px; */
+  margin: 1.8rem 0rem 1.8rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App .right .buttons .linePartition .line {
+  width: 7.5rem;
+  /* height: 3px; */
+  height: 0.1rem;
+  background-color: #d7d7d7;
+  border-radius: 4px;
+}
+
+.App .right .buttons .linePartition .lineText {
+  color: #686868;
+}
+
+.App .right .buttons .btnMail {
+  /* padding: 10px; */
+  padding: 0.6rem;
+  width: 18.7rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #674ea7;
+  color: #f6f6f6;
+  font-size: 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all ease-in-out 3ms;
+}
+
+.App .right .buttons .btnMail:hover {
+  opacity: 0.9;
+}
+
+.App .right .buttons .mailIcon img {
+  width: 1.8rem;
+}
+
+.App .right .buttons .btnMail .mailText {
+  font-size: 16px;
+  padding: 10px;
+}
