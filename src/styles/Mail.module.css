@@ -1,0 +1,36 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .App .rigth {
+    width: 50%;
+    margin-left: 30px;
+  }
+  
+  .App .right .text .heading {
+    font-size: 54px;
+    font-weight: 600;
+  }
+  
+  .App .right .text .subHeading {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  
+  .App .right .inputFields .userName {
+    position: relative;
+    height: 40px;
+    width: 180px;
+    background: #674fa7;
+    color: #674fa7; 
+    border-radius: 4px;
+  }
+  
+  .App .right .inputFields .userName .inputText {
+    bottom: 34px;
+    position: absolute;
+    margin-right: 100px;
+    margin-top: 10px;
+    font-size: 10px;
+  }

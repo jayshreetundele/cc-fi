@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from '../App.module.css'; 
+import classes from '../styles/App.module.css'; 
 // import { useNavigate } from 'react-router-dom'
 // import { Link } from 'react-router-dom'
 
