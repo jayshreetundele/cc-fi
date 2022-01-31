@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&family=Noto+Serif+Display:wght@100;200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --primaryColor: #5a189a;
+  --headerColor: #000000;
+  --greyColor: #5a189a;
+  --lineColor: #d7d7d7;
+  --bgColor: #f6f6f6;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -60,7 +68,7 @@
   align-items: center;
   justify-content: center;
   background-color: #674ea7;
-  color: #f6f6f6;
+  color: var(--bgColor);
   font-size: 16px;
   border-radius: 4px;
   display: flex;
@@ -96,7 +104,7 @@
   width: 7.5rem;
   /* height: 3px; */
   height: 0.1rem;
-  background-color: #d7d7d7;
+  background-color: var(--lineColor);
   border-radius: 4px;
 }
 

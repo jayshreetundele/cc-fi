@@ -1,36 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&family=Noto+Serif+Display:wght@100;200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primaryColor: #674fa7;
+  --purpleLight: #706293
+  --headerColor: #000000;
+  --greyColor: #5a189a;
+  --lineColor: #d7d7d7;
+  --bgColor: #f6f6f6;
+  --textGrey: #b0b0b0;
+}
+
+body a{
+  text-decoration: none;
+}
+
 .App {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  
-  .App .rigth {
-    width: 50%;
-    margin-left: 30px;
-  }
-  
-  .App .right .text .heading {
-    font-size: 54px;
-    font-weight: 600;
-  }
-  
-  .App .right .text .subHeading {
-    font-size: 22px;
-    font-weight: 400;
-  }
-  
-  .App .right .inputFields .userName {
-    position: relative;
-    height: 40px;
-    width: 180px;
-    background: #674fa7;
-    color: #674fa7; 
-    border-radius: 4px;
-  }
-  
-  .App .right .inputFields .userName .inputText {
-    bottom: 34px;
-    position: absolute;
-    margin-right: 100px;
-    margin-top: 10px;
-    font-size: 10px;
-  }
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bgColor);
+}
+
+.App .left {
+  width: 30%;
+  /* margin-right: 52rem; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.App .left img {
+  height: 37.6rem;
+  left: 0;
+}
+
+.App .right {
+  width: 100%;
+  /* margin-left: 30px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.App .right .text .heading {
+  margin-right: 12rem;
+  font-size: 54px;
+  font-weight: 600;
+}
+
+.App .right .text .subHeading {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.App .right .inputFields{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+/* Username input starts */
+
+.App .right .inputFields .userName .form {  
+  margin-top: 2rem;
+  position: relative;
+  width: 20rem;
+  height: 3rem;
+}
+
+.App .right .inputFields .userName .form .formInput{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1.75px solid var(--primaryColor);
+  border-radius: 0.2rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--primaryColor);
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+}
+
+.App .right .inputFields .userName .form .formInput:hover{
+  border-color: var(--purpleLight);
+}
+
+.App .right .inputFields .userName .form .formInput:focus{
+  border-color: var(--greyColor);
+}
+
+
+.App .right .inputFields .userName .form .formInput:focus~.formLabel,
+.App .right .inputFields .userName .form .formInput:not(:placeholder-shown).formInput:not(:focus)~.formLabel
+{
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+} 
+
+.App .right .inputFields .userName .form .formLabel{
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0.5rem;
+  color: var(--primaryColor);
+  cursor: text;
+  transition: top 200ms ease-in,
+  left 200ms ease-in;
+  /* font-size 200ms ease-in; */
+  background-color: var(--bgColor);
+}
+
+/* Username input ends */
+
+
+/* Email Input starts */
+
+.App .right .inputFields .email .form {
+  margin-top: 2rem;
+  position: relative;
+  width: 20rem;
+  height: 3rem;
+}
+
+.App .right .inputFields .email .form .formInput{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1.75px solid var(--primaryColor);
+  border-radius: 0.2rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--primaryColor);
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+}
+
+.App .right .inputFields .email .form .formInput:hover{
+  border-color: var(--purpleLight);
+}
+
+.App .right .inputFields .email .form .formInput:focus{
+  border-color: var(--greyColor);
+}
+
+
+.App .right .inputFields .email .form .formInput:focus~.formLabel,
+.App .right .inputFields .email .form .formInput:not(:placeholder-shown).formInput:not(:focus)~.formLabel
+{
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+} 
+
+.App .right .inputFields .email .form .formLabel{
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0.5rem;
+  color: var(--primaryColor);
+  cursor: text;
+  transition: top 200ms ease-in,
+  left 200ms ease-in;
+  /* font-size 200ms ease-in; */
+  background-color: var(--bgColor);
+}
+
+/* Email Input Ends */
+
+
+
+/* Password input starts */
+
+.App .right .inputFields .password .form {
+  margin-top: 2rem;
+  position: relative;
+  width: 20rem;
+  height: 3rem;
+}
+
+.App .right .inputFields .password .form .formInput{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1.75px solid var(--primaryColor);
+  border-radius: 0.2rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--primaryColor);
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+}
+
+.App .right .inputFields .password .form .formInput:hover{
+  border-color: var(--purpleLight);
+}
+
+.App .right .inputFields .password .form .formInput:focus{
+  border-color: var(--primaryColor);
+}
+
+
+.App .right .inputFields .password .form .formInput:focus~.formLabel,
+.App .right .inputFields .password .form .formInput:not(:placeholder-shown).formInput:not(:focus)~.formLabel
+{
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+} 
+
+.App .right .inputFields .password .form .formLabel{
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0.5rem;
+  color: var(--primaryColor);
+  cursor: text;
+  transition: top 200ms ease-in,
+  left 200ms ease-in;
+  /* font-size 200ms ease-in; */
+  background-color: var(--bgColor);
+}
+
+/* Password input ends */
+
+/* login btn */
+
+.App .right .loginBtn {
+  margin-top: 45px;
+  padding: 0.625rem;
+  width: 320px;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primaryColor);
+  color: var(--bgColor);
+  font-size: 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.App .right .loginBtn:hover {
+  opacity: 0.9;
+}
+
+.App .right .lowerText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.App .right .signupText {
+  color: var(--textGrey);
+  font-size: 14px;
+}
+.App .right .signup {
+  color: var(--primaryColor);
+  padding-left: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}

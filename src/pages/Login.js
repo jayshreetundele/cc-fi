@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from '../styles/App.module.css'; 
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 // import { Link } from 'react-router-dom'
 
 
@@ -8,8 +8,10 @@ import classes from '../styles/App.module.css';
 
 const Login = () => {
 
-  // const navigate = useNavigate()
-  //  navigate('/test')
+  const navigate = useNavigate()
+  function toMail(){
+    navigate('/mail')
+  }
 
   return <div className={classes.App}>
   <div className={classes.left}>
@@ -42,7 +44,7 @@ const Login = () => {
      </div>
      <div className={classes.line}></div>
      </div>
-    <div className={classes.btnMail}>
+    <div className={classes.btnMail} onClick={toMail}>
     <div className={classes.mailIcon}>
     <img src='/assets/mail.svg' alt='mail image' />
     </div>
