@@ -197,6 +197,7 @@ padding: 3rem 4rem;
   font-weight: 500;
   text-align: center;
   cursor: pointer;
+  z-index: 99;
  }
  .followSection .rect .btnnpic .btns .btnrow1 .btn1  , .followSection .rect .btnnpic .btns .btnrow2 .btn1:hover{
    border-color: var(--purpleLight);
