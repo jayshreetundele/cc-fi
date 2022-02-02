@@ -195,6 +195,88 @@
 
 /* Event Section ends */
 
+/*Follow club section Starts  */
+
+.followSection {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.followSection .rect {
+  width: 62rem;
+  height: 24rem;
+  background-color: #ebebeb;
+  border-radius: 20px;
+}
+.followSection .rect .followHeading {
+  font-size: 38px;
+  font-weight: 500;
+  padding: 3rem 4rem;
+}
+.followHeading .rect .btnnpic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.followSection .rect .btnnpic .btns {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 4rem;
+  justify-content: center;
+  flex-direction: column;
+}
+.followSection .rect .btnnpic .btns .btnrow1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+.followSection .rect .btnnpic .btns .btnrow2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+}
+.followSection .rect .btnnpic .btns .btnrow1 .btn1,
+.followSection .rect .btnnpic .btns .btnrow2 .btn1 {
+  position: relative;
+  width: 11rem;
+  height: 2.5rem;
+  border: 3px solid var(--primaryColor);
+  border-radius: 0.2rem;
+  font-family: inherit;
+  color: var(--primaryColor);
+  outline: none;
+  padding: 1rem 1rem;
+  background: none;
+  font-size: 12px;
+  margin-right: 2rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  z-index: 99;
+}
+.followSection .rect .btnnpic .btns .btnrow1 .btn1,
+.followSection .rect .btnnpic .btns .btnrow2 .btn1:hover {
+  border-color: var(--purpleLight);
+}
+.followSection .rect .btnnpic .btns .btnrow1 .btn1,
+.followSection .rect .btnnpic .btns .btnrow2 .btn1:focus {
+  border-color: var(--primaryColor);
+}
+.followSection .rect .btnnpic .pic {
+  display: flex;
+  justify-content: flex-end;
+}
+.followSection .rect .btnnpic .pic img {
+  width: 22rem;
+  height: auto;
+}
+
 /* Footer css Starts */
 .footer {
   position: relative;

@@ -73,6 +73,58 @@ const LandingPage = () => {
           <div className={classes.seeMore}>See More</div>
         </div>
       </div>
+
+      {/* Follow club section Starts */}
+
+      <section className={classes.followSection}>
+        <div className={classes.rect}>
+          <div className={classes.followHeading}>
+            Follow your favourite club
+          </div>
+          <div className={classes.btnnpic}>
+            <div className={classes.btns}>
+              <div className={classes.btnrow1}>
+                <div className={classes.btn1}>
+                  <a target="_blank" href=" ">
+                    ASIMOV Robotics Club
+                  </a>
+                </div>
+                <div className={classes.btn1}>
+                  <a target="_blank" href=" ">
+                    ASIMOV Robotics Club
+                  </a>
+                </div>
+                <div className={classes.btn1}>
+                  <a target="_blank" href=" ">
+                    ASIMOV Robotics Club
+                  </a>
+                </div>
+              </div>
+              <div className={classes.btnrow2}>
+                <div className={classes.btn1}>
+                  <a target="_blank" href=" ">
+                    ASIMOV Robotics Club
+                  </a>
+                </div>
+                <div className={classes.btn1}>
+                  <a target="_blank" href=" ">
+                    ASIMOV Robotics Club
+                  </a>
+                </div>
+                <div className={classes.btn1}>
+                  <a target="_blank" href=" ">
+                    ASIMOV Robotics Club
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className={classes.pic}>
+              <img src="/assets/Boy Illus.png" alt="Follow Clubs Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className={classes.footer}>
         <div className={classes.content}>
           <div className={classes.query}>
