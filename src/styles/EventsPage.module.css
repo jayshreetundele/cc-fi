@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&family=Noto+Serif+Display:wght@100;200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primaryColor: #674fa7;
+  --purpleLight: #706293;
+  --headerColor: #222222;
+  --greyColor: #5a189a;
+  --lineColor: #d7d7d7;
+  --bgColor: #f6f6f6;
+  --textGrey: #b0b0b0;
+  --purpleColor: #1e1139;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.App {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bgColor);
+  /* padding: 0rem 4rem 0rem 4rem; */
+  overflow-x: hidden;
+}
+.nav {
+  padding-left: 4rem;
+  padding-top: 0.6rem;
+  height: 10vh;
+  width: 100%;
+  background-color: var(--bgColor);
+  color: var(--primaryColor);
+  font-size: 24px;
+  font-weight: 600;
+  box-shadow: 0px 0px 4px #7a7a7a;
+  position: fixed;
+}
+.App .headingnback{
+    display: flex;
+    flex-direction: row;
+}
+
+.App .headingnback .heading{
+    font-size: 42px;
+    font-weight: 600;
+    margin-top: 15vh;
+    padding-left: 4rem;
+    /* margin-bottom: 2rem; */
+}
+
+
+.App .headingnback .back {
+    margin-top: 15vh;
+    color: var(--primaryColor);
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+  height: auto;
+  border: 2.5px solid var(--primaryColor);
+  border-radius: 0.2rem;
+  font-family: inherit;
+ cursor: pointer;
+  outline: none;
+  padding: 1rem 1rem 1rem 1rem;
+  background: none;
+  font-weight: 500;
+}
+
+.App .headingnback .back:hover {
+  border-color: var(--purpleLight);
+}
+
+.App .headingnback .back:focus {
+  border-color: var(--primaryColor);
+}
+.App .clubsName{
+    width: 100%;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    height: auto;
+    display: flex;
+
+}
+.App .clubsName .clubAsimov{
+    
+    color: var(--primaryColor);
+    font-size: 16px;
+  height: auto;
+  border: 2.5px solid var(--primaryColor);
+  border-radius: 0.2rem;
+  font-family: inherit;
+ cursor: pointer;
+  outline: none;
+  padding: .5rem .5rem .5rem .5rem;
+  background: none;
+  margin-right: 1rem;
+}
