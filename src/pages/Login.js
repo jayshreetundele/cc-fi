@@ -33,7 +33,7 @@ const Login = () => {
     <div className={classes.googleIcon}>
     <img src='/assets/google.svg' alt='google image' />
     </div>
-     <div className={classes.googleText}>
+     <div className={classes.googleText} >
      continue with google
      </div>
      </div>
