@@ -8,11 +8,13 @@
   --lineColor: #d7d7d7;
   --bgColor: #f6f6f6;
   --textGrey: #b0b0b0;
+  --purpleColor: #1e1139;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .App {
@@ -25,9 +27,16 @@
 }
 
 .nav {
+  padding-left: 4rem;
+  padding-top: 0.6rem;
   height: 10vh;
   width: 100%;
-  background: #000;
+  background-color: var(--bgColor);
+  color: var(--primaryColor);
+  font-size: 24px;
+  font-weight: 600;
+  box-shadow: 0px 0px 4px #7a7a7a;
+  position: fixed;
 }
 
 /* Hero Section starts */
@@ -38,7 +47,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0rem 4rem 0rem 4rem;
+  padding: 4rem 4rem 0rem 4rem;
 }
 
 .App .heroSection .left {
@@ -48,6 +57,11 @@
 .App .heroSection .left .heading {
   font-size: 36px;
   font-weight: 600;
+}
+
+.App .heroSection .left .heading:after {
+  content: " Everyday";
+  color: var(--primaryColor);
 }
 
 .App .heroSection .left .heading2 {
@@ -92,22 +106,94 @@
 /* Events Section starts */
 
 .App .eventSection {
+  height: 100vh;
   padding: 0rem 4rem 0rem 4rem;
   background-color: var(--bgColor);
   width: 100%;
 }
 
 .App .eventSection .heading {
+  padding-top: 3rem;
   font-size: 36px;
   font-weight: 600;
 }
 
+.App .eventSection .eventCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .App .eventSection .eventCard {
+  margin-top: 2rem;
   width: 20rem;
-  height: 24rem;
-  background-color: var(--purpleLight);
+  height: 25rem;
+  background-color: var(--textGrey);
   border-radius: 0.3rem;
 }
+
+.App .eventSection .eventCard .eventImage {
+  width: 20rem;
+  height: 15rem;
+  background-color: var(--purpleColor);
+  border-radius: 0.3rem;
+}
+
+.App .eventSection .eventCard .eventHeading {
+  padding-left: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.App .eventSection .eventCard .eventDescription {
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.App .eventSection .eventCard .time {
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.App .eventSection .eventCard .registerBtn {
+  margin-left: 8rem;
+  margin-top: -1.5rem;
+  padding: 0.625rem;
+  width: 10rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--purpleColor);
+  border: 2px solid var(--bgColor);
+  color: var(--bgColor);
+  font-size: 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.App .eventSection .seeMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 8rem;
+  height: 25rem;
+  background-color: var(--purpleColor);
+  border-radius: 0.3rem;
+  font-size: 18px;
+  color: var(--bgColor);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Event Section ends */
 
 /* Footer css Starts */
 .footer {
@@ -117,7 +203,7 @@
   height: 18rem;
   background: #222222;
   text-align: center;
-  padding: 2rem 6.6rem;
+  /* padding: 2rem 6.6rem; */
 }
 .footer .content {
   display: flex;
@@ -132,24 +218,23 @@
   align-items: flex-start;
   margin-top: 3rem;
 }
-.footer .content .query .heading{
+.footer .content .query .heading {
   font-size: 28px;
   font-weight: 500;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   color: var(--bgColor);
 }
-.footer .content .query .queryContent{
+.footer .content .query .queryContent {
   font-size: 14px;
   color: var(--textGrey);
 }
-.footer .content .query .queryContent2{
+.footer .content .query .queryContent2 {
   font-size: 14px;
   color: var(--textGrey);
 }
-.footer .content .query .queryContent3{
+.footer .content .query .queryContent3 {
   font-size: 14px;
   color: var(--textGrey);
-
 }
 
 /* box */
@@ -161,7 +246,7 @@
   height: 3.2rem;
 }
 
-.footer .content .queryBox .form .formInput{
+.footer .content .queryBox .form .formInput {
   position: absolute;
   top: 0;
   left: 0;
@@ -177,21 +262,18 @@
   background: none;
 }
 
-.footer .content .queryBox .form .formInput:hover{
+.footer .content .queryBox .form .formInput:hover {
   border-color: var(--purpleLight);
 }
 
-.footer .content .queryBox .form .formInput:focus{
+.footer .content .queryBox .form .formInput:focus {
   border-color: var(--primaryColor);
 }
-
-
-
 
 /* button */
 
 .footer .content .queryBox .queryBtn {
-  margin-top: .8rem;
+  margin-top: 0.8rem;
   padding: 0.625rem;
   width: 18rem;
   height: 2.5rem;
@@ -209,7 +291,7 @@
 .footer .content .queryBox .queryBtn:hover {
   opacity: 0.9;
 }
-.footer .owner{
+.footer .owner {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,12 +300,10 @@
   background: #222222;
   margin-bottom: 1.5rem;
 }
-.footer .owner .aditi , .footer .owner .jayshree{
+.footer .owner .aditi,
+.footer .owner .jayshree {
   color: var(--primaryColor);
-  padding-left: .3rem;
-  padding-right: .3rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
   cursor: pointer;
 }
-
-
-

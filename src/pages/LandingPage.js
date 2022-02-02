@@ -10,13 +10,13 @@ const LandingPage = () => {
 
   return (
     <div className={classes.App}>
-      <div className={classes.nav}></div>
+      <div className={classes.nav}>MITS, Gwalior Events Portal</div>
       <div className={classes.heroSection}>
         <div className={classes.left}>
           <div className={classes.heading}>
             Learn something new and win exiciting prizes
           </div>
-          <div className={classes.heading2}>Everyday</div>
+          {/* <div className={classes.heading2}>Everyday</div> */}
           <div className={classes.subHeading}>
             Stay updated with all the upcoming events at MITS. Also checkout our
             previous events for some amazing content!
@@ -29,15 +29,14 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-
       <div className={classes.eventSection}>
         <div className={classes.heading}>Our Events</div>
-        <div className={classes.eventImage}>
-          <img src="" alt="" />
-        </div>
-        <div className={classes.evenntCard}>
-          <div className={classes.registerBtn}>Register</div>
-          <div className={classes.eventCards}>
+        <div className={classes.eventCards}>
+          <div className={classes.eventCard}>
+            <div className={classes.eventImage}>
+              <img src="" alt="" />
+            </div>
+            <div className={classes.registerBtn}>Register</div>
             <div className={classes.eventHeading}>Heading</div>
             <div className={classes.eventDescription}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
@@ -45,20 +44,44 @@ const LandingPage = () => {
             </div>
             <div className={classes.time}>10 September 2021 | 7:00 PM</div>
           </div>
+
+          <div className={classes.eventCard}>
+            <div className={classes.eventImage}>
+              <img src="" alt="" />
+            </div>
+            <div className={classes.registerBtn}>Register</div>
+            <div className={classes.eventHeading}>Heading</div>
+            <div className={classes.eventDescription}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
+              accumsan nulla quam aliquam blandit in sed aliquam eget.
+            </div>
+            <div className={classes.time}>10 September 2021 | 7:00 PM</div>
+          </div>
+
+          <div className={classes.eventCard}>
+            <div className={classes.eventImage}>
+              <img src="" alt="" />
+            </div>
+            <div className={classes.registerBtn}>Register</div>
+            <div className={classes.eventHeading}>Heading</div>
+            <div className={classes.eventDescription}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
+              accumsan nulla quam aliquam blandit in sed aliquam eget.
+            </div>
+            <div className={classes.time}>10 September 2021 | 7:00 PM</div>
+          </div>
+          <div className={classes.seeMore}>See More</div>
         </div>
       </div>
-
       <section className={classes.footer}>
         <div className={classes.content}>
           <div className={classes.query}>
             <div className={classes.heading}>Still have a Query?</div>
             <div className={classes.queryContent}>We have got your back.</div>
             <div className={classes.queryContent2}>
-              Write your query to us, we would be more 
+              Write your query to us, we would be more
             </div>
-            <div className={classes.queryContent3}>
-              than happy to reply.
-            </div>
+            <div className={classes.queryContent3}>than happy to reply.</div>
           </div>
           <div className={classes.queryBox}>
             <div className={classes.form}>
@@ -78,20 +101,19 @@ const LandingPage = () => {
           </div>
         </div>
         <div className={classes.owner}>
-          <div className={classes.dnd}>
-            Designed and Developed by 
-         </div>
+          <div className={classes.dnd}>Designed and Developed by</div>
           <div className={classes.aditi}>
-            <a target="_blank" href=" ">Aditi</a>
-         </div>
-          <div className={classes.and}>
-           and
-         </div>
+            <a target="_blank" href=" ">
+              Aditi
+            </a>
+          </div>
+          <div className={classes.and}>and</div>
           <div className={classes.jayshree}>
-            <a target="_blank" href=" ">Jayshree</a>
-         </div>
+            <a target="_blank" href=" ">
+              Jayshree
+            </a>
+          </div>
         </div>
-
       </section>
     </div>
   );
