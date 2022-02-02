@@ -54,7 +54,10 @@ const LandingPage = () => {
             <div className={classes.heading}>Still have a Query?</div>
             <div className={classes.queryContent}>We have got your back.</div>
             <div className={classes.queryContent2}>
-              Write your query to us, we would be more than happy to reply.
+              Write your query to us, we would be more 
+            </div>
+            <div className={classes.queryContent3}>
+              than happy to reply.
             </div>
           </div>
           <div className={classes.queryBox}>
@@ -62,14 +65,10 @@ const LandingPage = () => {
               <input
                 type="text"
                 id="email"
-                placeholder=" "
+                placeholder="  Write your query here! "
                 autocomplete="off"
                 className={classes.formInput}
               ></input>
-              <label for="email" className={classes.formLabel}>
-                {" "}
-                Write your query here!
-              </label>
             </div>
             <div className={classes.queryBtn}>send to us</div>
           </div>
@@ -78,6 +77,21 @@ const LandingPage = () => {
             <img src="/assets/mailbox.svg" alt="Mail box Image" />
           </div>
         </div>
+        <div className={classes.owner}>
+          <div className={classes.dnd}>
+            Designed and Developed by 
+         </div>
+          <div className={classes.aditi}>
+            <a target="_blank" href=" ">Aditi</a>
+         </div>
+          <div className={classes.and}>
+           and
+         </div>
+          <div className={classes.jayshree}>
+            <a target="_blank" href=" ">Jayshree</a>
+         </div>
+        </div>
+
       </section>
     </div>
   );
