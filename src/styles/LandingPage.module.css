@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&family=Noto+Serif+Display:wght@100;200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primaryColor: #674fa7;
+  --purpleLight: #706293;
+  --headerColor: #222222;
+  --greyColor: #5a189a;
+  --lineColor: #d7d7d7;
+  --bgColor: #f6f6f6;
+  --textGrey: #b0b0b0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bgColor);
+  /* padding: 0rem 4rem 0rem 4rem; */
+  overflow-x: hidden;
+}
+
+.nav {
+  height: 10vh;
+  width: 100%;
+  background: #000;
+}
+
+/* Hero Section starts */
+
+.App .heroSection {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 4rem 0rem 4rem;
+}
+
+.App .heroSection .left {
+  /* padding: 3rem; */
+  width: 60%;
+}
+.App .heroSection .left .heading {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.App .heroSection .left .heading2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+
+.App .heroSection .left .subHeading {
+  padding-top: 1.5rem;
+  font-size: 20px;
+}
+
+.App .heroSection .left .exploreBtn {
+  margin-top: 1.5rem;
+  padding: 0.625rem;
+  width: 150px;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #674ea7;
+  color: var(--bgColor);
+  font-size: 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all ease-in-out 3ms;
+}
+
+.App .heroSection .left .exploreBtn:hover {
+  opacity: 0.9;
+}
+.App .heroSection .right .heroImage img {
+  height: 28rem;
+}
+
+/* Hero Section ends */
+
+/* Events Section starts */
+
+.App .eventSection {
+  padding: 0rem 4rem 0rem 4rem;
+  background-color: var(--bgColor);
+  width: 100%;
+}
+
+.App .eventSection .heading {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.App .eventSection .eventCard {
+  width: 20rem;
+  height: 24rem;
+  background-color: var(--purpleLight);
+  border-radius: 0.3rem;
+}
+
+/* Footer css Starts */
+.footer {
+  position: relative;
+  left: -4vw;
+  width: 105vw;
+  background: #222222;
+  color: var(--bgColor);
+  text-align: center;
+  padding: 2rem 0;
+}
+.footer .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.footer .content .query {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}

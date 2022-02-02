@@ -2,6 +2,7 @@
 import './App.css';
 import Login from './pages/Login';
 import Mail from './pages/Mail';
+import LandingPage from './pages/LandingPage';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -12,7 +13,7 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Login />} />
           <Route exact path="/mail" element={<Mail />} />
-
+          <Route exact path="/landingPage" element={<LandingPage />} />
 
 
         </Routes>
