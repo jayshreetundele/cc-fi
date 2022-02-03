@@ -2,11 +2,25 @@ import React from "react";
 import classes from "../styles/LandingPage.module.css";
 import { useNavigate } from "react-router-dom";
 
-const LandingPage = () => {
-  const navigate = useNavigate();
-  function toLandingPage() {
-    navigate("/landingPage");
-  }
+// const LandingPage = () => {
+//   const navigate = useNavigate();
+//   function toLandingPage() {
+//     navigate("/landingPage");
+
+
+
+
+//   }
+  const LandingPage = () => {
+
+
+
+    const navigate = useNavigate();
+    function toEventsPage() {
+      navigate("/eventsPage");
+    }
+
+  
 
   return (
     <div className={classes.App}>
@@ -70,7 +84,7 @@ const LandingPage = () => {
             </div>
             <div className={classes.time}>10 September 2021 | 7:00 PM</div>
           </div>
-          <div className={classes.seeMore}>See More</div>
+          <div className={classes.seeMore} onClick={toEventsPage}>See More</div>
         </div>
       </div>
 
