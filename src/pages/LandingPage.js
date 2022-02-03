@@ -7,20 +7,12 @@ import { useNavigate } from "react-router-dom";
 //   function toLandingPage() {
 //     navigate("/landingPage");
 
-
-
-
 //   }
-  const LandingPage = () => {
-
-
-
-    const navigate = useNavigate();
-    function toEventsPage() {
-      navigate("/eventsPage");
-    }
-
-  
+const LandingPage = () => {
+  const navigate = useNavigate();
+  function toEventsPage() {
+    navigate("/eventsPage");
+  }
 
   return (
     <div className={classes.App}>
@@ -30,12 +22,14 @@ import { useNavigate } from "react-router-dom";
           <div className={classes.heading}>
             Learn something new and win exiciting prizes
           </div>
-          {/* <div className={classes.heading2}>Everyday</div> */}
           <div className={classes.subHeading}>
             Stay updated with all the upcoming events at MITS. Also checkout our
             previous events for some amazing content!
           </div>
-          <div className={classes.exploreBtn}>Explore</div>
+
+          <a href="#eventSection">
+            <div className={classes.exploreBtn}> Explore</div>
+          </a>
         </div>
         <div className={classes.right}>
           <div className={classes.heroImage}>
@@ -43,7 +37,9 @@ import { useNavigate } from "react-router-dom";
           </div>
         </div>
       </div>
-      <div className={classes.eventSection}>
+      <div className={classes.space}></div>
+
+      <div className={classes.eventSection} id="eventSection">
         <div className={classes.heading}>Our Events</div>
         <div className={classes.eventCards}>
           <div className={classes.eventCard}>
@@ -84,9 +80,12 @@ import { useNavigate } from "react-router-dom";
             </div>
             <div className={classes.time}>10 September 2021 | 7:00 PM</div>
           </div>
-          <div className={classes.seeMore} onClick={toEventsPage}>See More</div>
+          <div className={classes.seeMore} onClick={toEventsPage}>
+            See More
+          </div>
         </div>
       </div>
+      <div className={classes.space}></div>
 
       {/* Follow club section Starts */}
 
@@ -138,6 +137,7 @@ import { useNavigate } from "react-router-dom";
           </div>
         </div>
       </section>
+      <div className={classes.space}></div>
 
       <section className={classes.footer}>
         <div className={classes.content}>

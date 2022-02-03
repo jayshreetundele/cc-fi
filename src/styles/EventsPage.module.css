@@ -9,6 +9,7 @@
   --bgColor: #f6f6f6;
   --textGrey: #b0b0b0;
   --purpleColor: #1e1139;
+  --registerBtn: #00e175;
 }
 * {
   margin: 0;
@@ -24,6 +25,8 @@
   background-color: var(--bgColor);
   /* padding: 0rem 4rem 0rem 4rem; */
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .nav {
   padding-left: 4rem;
@@ -37,35 +40,42 @@
   box-shadow: 0px 0px 4px #7a7a7a;
   position: fixed;
 }
-.App .headingnback{
-    display: flex;
-    flex-direction: row;
+
+.App .space {
+  width: 100%;
+  height: 10rem;
 }
 
-.App .headingnback .heading{
-    font-size: 42px;
-    font-weight: 600;
-    margin-top: 15vh;
-    padding-left: 4rem;
-    /* margin-bottom: 2rem; */
+.App .headingnback {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
+.App .headingnback .heading {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 15vh;
+  padding-left: 4rem;
+}
 
 .App .headingnback .back {
-    margin-top: 15vh;
-    color: var(--primaryColor);
-    font-size: 18px;
-    display: flex;
-    justify-content: flex-end;
+  margin-top: 15vh;
+  color: var(--primaryColor);
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-end;
   height: auto;
   border: 2.5px solid var(--primaryColor);
   border-radius: 0.2rem;
   font-family: inherit;
- cursor: pointer;
+  cursor: pointer;
   outline: none;
   padding: 1rem 1rem 1rem 1rem;
   background: none;
   font-weight: 500;
+  margin-right: 4rem;
+  margin-bottom: 1.5rem;
 }
 
 .App .headingnback .back:hover {
@@ -75,25 +85,219 @@
 .App .headingnback .back:focus {
   border-color: var(--primaryColor);
 }
-.App .clubsName{
-    width: 100%;
-    margin-right: 4rem;
-    margin-left: 4rem;
-    height: auto;
-    display: flex;
-
+.App .clubsName {
+  width: 100%;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  height: auto;
+  display: flex;
 }
-.App .clubsName .clubAsimov{
-    
-    color: var(--primaryColor);
-    font-size: 16px;
+.App .clubsName .clubAsimov {
+  color: var(--primaryColor);
+  font-size: 16px;
   height: auto;
   border: 2.5px solid var(--primaryColor);
   border-radius: 0.2rem;
   font-family: inherit;
- cursor: pointer;
+  cursor: pointer;
   outline: none;
-  padding: .5rem .5rem .5rem .5rem;
+  font-weight: 500;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   background: none;
   margin-right: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Events Section starts */
+
+.App .eventSection {
+  height: 100vh;
+  padding: 0rem 4rem 0rem 4rem;
+  background-color: var(--bgColor);
+  width: 100%;
+}
+
+.App .eventSection .heading {
+  padding-top: 3rem;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.App .eventSection .eventCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App .eventSection .eventCard {
+  margin-top: 2rem;
+  width: 20rem;
+  height: 25rem;
+  background-color: var(--lineColor);
+  border-radius: 0.3rem;
+}
+
+.App .eventSection .eventCard .eventImage {
+  width: 20rem;
+  height: 15rem;
+  background-color: var(--purpleColor);
+  border-radius: 0.3rem;
+}
+
+.App .eventSection .eventCard .eventHeading {
+  padding-left: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.App .eventSection .eventCard .eventDescription {
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.App .eventSection .eventCard .time {
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.App .eventSection .eventCard .registerBtn {
+  margin-left: 8rem;
+  margin-top: -1.5rem;
+  padding: 0.625rem;
+  width: 10rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--registerBtn);
+  border: 2px solid var(--registerBtn);
+  color: #222222;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all ease-in-out 200ms;
+}
+.App .eventSection .eventCard .registerBtn:hover {
+  transform: scale(1.05);
+}
+
+/* Footer css Starts */
+.footer {
+  position: relative;
+  left: -4vw;
+  width: 105vw;
+  height: 18rem;
+  background: #222222;
+  text-align: center;
+  /* padding: 2rem 6.6rem; */
+}
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.footer .content .query {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 3rem;
+}
+.footer .content .query .heading {
+  font-size: 28px;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  color: var(--bgColor);
+}
+.footer .content .query .queryContent {
+  font-size: 14px;
+  color: var(--textGrey);
+}
+.footer .content .query .queryContent2 {
+  font-size: 14px;
+  color: var(--textGrey);
+}
+.footer .content .query .queryContent3 {
+  font-size: 14px;
+  color: var(--textGrey);
+}
+
+/* box */
+
+.footer .content .queryBox .form {
+  margin-top: 3rem;
+  position: relative;
+  width: 18rem;
+  height: 3.2rem;
+}
+
+.footer .content .queryBox .form .formInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1.75px solid var(--primaryColor);
+  border-radius: 0.2rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--textGrey);
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+}
+
+.footer .content .queryBox .form .formInput:hover {
+  border-color: var(--purpleLight);
+}
+
+.footer .content .queryBox .form .formInput:focus {
+  border-color: var(--primaryColor);
+}
+
+/* button */
+
+.footer .content .queryBox .queryBtn {
+  margin-top: 0.8rem;
+  padding: 0.625rem;
+  width: 18rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primaryColor);
+  color: var(--bgColor);
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.footer .content .queryBox .queryBtn:hover {
+  opacity: 0.9;
+}
+.footer .owner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: var(--textGrey);
+  background: #222222;
+  margin-bottom: 1.5rem;
+}
+.footer .owner .aditi,
+.footer .owner .jayshree {
+  color: var(--primaryColor);
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  cursor: pointer;
 }
