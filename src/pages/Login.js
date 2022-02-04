@@ -1,13 +1,21 @@
 import React from "react";
 import classes from "../styles/App.module.css";
 import { useNavigate } from "react-router-dom";
-// import { Link } from 'react-router-dom'
+import { SignInWithFirebase as GoogleSignIn } from "../utilities/auth";
 
 const Login = () => {
   const navigate = useNavigate();
   function toMail() {
     navigate("/mail");
   }
+  // const SignInWithFirebase = () => {
+  //   GoogleSignIn(onSuccessfulLogin)
+  // }
+  // const GoogleSignIn = ()=>{
+  //   navigate("/landingPage")
+  // }
+
+ 
 
   return (
     <div className={classes.App}>
@@ -21,7 +29,7 @@ const Login = () => {
           <div className={classes.subHeading}>cc-fi welcomes you</div>
         </div>
         <div className={classes.buttons}>
-          <div className={classes.btnGoogle}>
+          <div className={classes.btnGoogle} onClick={GoogleSignIn}>
             <div className={classes.googleIcon}>
               <img src="/assets/google.svg" alt="google image" />
             </div>
