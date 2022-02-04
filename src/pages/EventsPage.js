@@ -10,7 +10,14 @@ const EventsPage = () => {
 
   return (
     <div className={classes.App}>
-      <div className={classes.nav}>MITS, Gwalior Events Portal</div>
+      <div className={classes.nav}>
+        MITS, Gwalior Events Portal
+        <div className={classes.logout}>
+          <a href="">
+            <div className={classes.logoutText}>logout</div>
+          </a>
+        </div>
+      </div>
       <div className={classes.headingnback}>
         <div className={classes.heading}>All MITS Events</div>
         <div className={classes.back} onClick={toLandingPage}>

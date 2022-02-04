@@ -34,8 +34,9 @@
 
 .nav {
   padding-left: 4rem;
-  padding-top: 0.6rem;
-  height: 10vh;
+  padding-right: 4rem;
+  padding-top: 0.1rem;
+  height: 12vh;
   width: 100%;
   background-color: var(--bgColor);
   color: var(--primaryColor);
@@ -43,6 +44,21 @@
   font-weight: 600;
   box-shadow: 0px 0px 4px #7a7a7a;
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .logout {
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav .logoutText {
+  font-size: 16px;
+  color: var(--primaryColor);
 }
 
 /* Hero Section starts */

@@ -16,7 +16,14 @@ const LandingPage = () => {
 
   return (
     <div className={classes.App}>
-      <div className={classes.nav}>MITS, Gwalior Events Portal</div>
+      <div className={classes.nav}>
+        MITS, Gwalior Events Portal
+        <div className={classes.logout}>
+          <a href="">
+            <div className={classes.logoutText}>logout</div>
+          </a>
+        </div>
+      </div>
       <div className={classes.heroSection}>
         <div className={classes.left}>
           <div className={classes.heading}>
