@@ -7,6 +7,11 @@ const EventsPage = () => {
   function toLandingPage() {
     navigate("/landingPage");
   }
+  
+  function logout() {
+    localStorage.clear();
+    navigate('/')
+  }
 
   return (
     <div className={classes.App}>
@@ -14,7 +19,7 @@ const EventsPage = () => {
         MITS, Gwalior Events Portal
         <div className={classes.logout}>
           <a href="">
-            <div className={classes.logoutText}>logout</div>
+            <div className={classes.logoutText} onClick={logout}>logout</div>
           </a>
         </div>
       </div>

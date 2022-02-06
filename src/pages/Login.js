@@ -14,8 +14,13 @@ const Login = () => {
   // const GoogleSignIn = ()=>{
   //   navigate("/landingPage")
   // }
+  // if (GoogleSignIn.found === true) {
+  //   navigate("/landingPage")
+  //   console.log("to landing");
+  // } else {
+  //   navigate("/")
+  // }
 
- 
 
   return (
     <div className={classes.App}>
