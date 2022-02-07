@@ -1,26 +1,39 @@
 import React from "react";
 import classes from "../styles/App.module.css";
 import { useNavigate } from "react-router-dom";
-import { SignInWithFirebase as GoogleSignIn } from "../utilities/auth";
+import {auth} from '../utilities/firebase'
+import { GoogleAuthProvider, signInWithPopup, getAuth, signOut } from 'firebase/auth'
 
 const Login = () => {
   const navigate = useNavigate();
   function toMail() {
     navigate("/mail");
   }
-  // const SignInWithFirebase = () => {
-  //   GoogleSignIn(onSuccessfulLogin)
-  // }
-  // const GoogleSignIn = ()=>{
-  //   navigate("/landingPage")
-  // }
-  // if (GoogleSignIn.found === true) {
-  //   navigate("/landingPage")
-  //   console.log("to landing");
-  // } else {
-  //   navigate("/")
-  // }
 
+  const GoogleSignIn = async(onSuccessfulLogin)=>{
+      const googleProvider = new GoogleAuthProvider()
+  
+      await signInWithPopup(auth, googleProvider)
+          .then((re) => {
+              navigate('/landingPage')
+          })
+          .catch((err) => {
+              console.log(err);
+          })
+  }
+  
+  
+  // sign out
+  const logOut = (callback) => {
+      const auth = getAuth()
+  
+      signOut(auth)
+          .then(() => {
+              console.log("Signed out")
+              callback()
+          })
+          .catch(err => console.log(err))
+  }
 
   return (
     <div className={classes.App}>
