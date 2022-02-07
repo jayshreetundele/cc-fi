@@ -32,7 +32,7 @@ export const logOut = (callback) => {
 
     signOut(auth)
         .then(() => {
-            console.log('Signed out')
+            console.log("Signed out")
             callback()
         })
         .catch(err => console.log(err))

@@ -59,6 +59,7 @@
 .nav .logoutText {
   font-size: 16px;
   color: var(--primaryColor);
+  cursor: pointer;
 }
 
 /* Hero Section starts */

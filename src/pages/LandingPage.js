@@ -13,15 +13,20 @@ const LandingPage = () => {
   function toEventsPage() {
     navigate("/eventsPage");
   }
+  
+  function logout() {
+    localStorage.clear();
+    navigate('/')
+  }
 
   return (
     <div className={classes.App}>
       <div className={classes.nav}>
         MITS, Gwalior Events Portal
         <div className={classes.logout}>
-          <a href="">
-            <div className={classes.logoutText}>logout</div>
-          </a>
+          {/* <a href=""> */}
+            <div className={classes.logoutText} onClick={logout}>logout</div>
+          {/* </a> */}
         </div>
       </div>
       <div className={classes.heroSection}>
